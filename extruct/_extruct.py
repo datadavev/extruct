@@ -2,7 +2,6 @@ import logging
 import warnings
 
 from extruct.jsonld import JsonLdExtractor
-from extruct.rdfa import RDFaExtractor
 from extruct.w3cmicrodata import MicrodataExtractor
 from extruct.opengraph import OpenGraphExtractor
 from extruct.microformat import MicroformatExtractor
@@ -10,7 +9,7 @@ from extruct.uniform import _umicrodata_microformat, _uopengraph
 from extruct.utils import parse_xmldom_html
 
 logger = logging.getLogger(__name__)
-SYNTAXES = ['microdata', 'opengraph', 'json-ld', 'microformat', 'rdfa']
+SYNTAXES = ['microdata', 'opengraph', 'json-ld', 'microformat']
 
 
 def extract(htmlstring,
